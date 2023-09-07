@@ -1,2 +1,4 @@
 #!/bin/bash
-php -f "$(pwd)/public/index.php"
+ls -la
+
+php -f "./app/public/index.php"
