@@ -1,2 +1,2 @@
 #!/bin/bash
-php -f ./public/index.php
+php -f index.php
