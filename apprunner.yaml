@@ -4,6 +4,7 @@ build:
   commands:
     build:
       - echo my test PHP command
-      - php -f ./index.php
+      - php -v  
+      - php -f index.php
 run:
   command: php -S 0.0.0.0:3000 -t
