@@ -2,20 +2,12 @@ version: 1.0
 runtime: php81
 build:
   commands:
-    pre-build:
-      - echo entering prebuild
-      - mkdir -p public
-      - cd public
-      - touch index.php
-      - echo "<?php" > index.php
-      - echo "echo 'Hello, World!';" >> index.php
-      - echo "?>" >> index.php
     build:
       - echo no build command for this PHP project
-      
     post-build:
-      - chmod 777 ./startup.sh
-      - ./startup.sh
+      - echo my post build commands running..
+      - chmod 777 ./scripts/post-build.sh
+      - ./scripts/post-build.sh
 run:
   command: php -S 0.0.0.0:3000 -t .
   network:
