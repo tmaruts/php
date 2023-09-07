@@ -3,6 +3,7 @@ runtime: php81
 build:
   commands:
     build:
-      - echo example build command for PHP
+      - echo my test PHP command
+      - php -f ./public/index.php
 run:
-  command: ./startup.sh
+  command: php -S 0.0.0.0:3000 -t
