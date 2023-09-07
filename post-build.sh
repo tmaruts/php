@@ -1,2 +1,7 @@
 #!/bin/bash
-php -f ./index.php
+
+echo this is my files
+
+ls -la
+
+echo "this is my test script"
